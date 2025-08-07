@@ -16,7 +16,7 @@ body {
   background-color: rgb(238, 235, 235);
   background-image: url(../Acad/BG.png);
   background-size: 30% auto;
-  background-position: top ;
+  background-position: top left;
   background-repeat: no-repeat;
   height: 200px;
   background-attachment: fixed;
