@@ -212,9 +212,9 @@ footer a {
 /* 🔽 Responsive Mobile Styles */
 @media (max-width: 768px) {
   .banner {
-    background-size: 50% auto;
-    height: 150px;
-    padding: 10px;
+    background-size: 80% auto; /* make image larger on smaller screens */
+    background-position: center top;
+    height: 180px;
   }
 
   .banner h3 {
