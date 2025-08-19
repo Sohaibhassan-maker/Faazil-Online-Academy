@@ -82,7 +82,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 1000px;
   
 }
 
@@ -128,7 +128,26 @@ p {
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 10px;
 }
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  .subjects-grid,
+  .quran-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 15px; /* smaller gap */
+  }
+}
+
+/* Tablets (481px – 768px) */
+@media (max-width: 768px) {
+  .subjects-grid,
+  .quran-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
 
 /* Cards */
 .subject-card,
