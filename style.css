@@ -76,14 +76,29 @@ p {
 }
 
 /* Subjects Section */
+/* Subjects Section */
 .subjects-section {
   background-image: url(/AA.png);
   background-size: cover;
-   
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 500px;
   width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .subjects-section {
+    height: 300px;   /* smaller height for tablets/phones */
+    background-size: contain; /* adjust image scaling */
+  }
+}
+
+@media (max-width: 480px) {
+  .subjects-section {
+    height: 200px;   /* even smaller for small phones */
+    background-size: contain;
+  }
 }
 
 .quran-section {
