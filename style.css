@@ -1,22 +1,24 @@
-* {
-  box-sizing: border-box;
-}
-
-/* General page styling */
+/* General Page Styling */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #f0f4ff, #e0f7fa);
-  color: #333;
+ 
+}
+
+/* Main Content */
+main {
+  background-color: #12508f;
+  text-align: center;
+  padding: 5px;
 }
 
 /* Header */
 .banner {
-  background-color: rgb(238, 235, 235);
-  background-image: url(../Acad/BG.png);
+  background-color: #115191;
+  background-image: url(/BG\ 2.png);
   background-size: 30% auto;
-  background-position: top left;
+  background-position:top center;
   background-repeat: no-repeat;
   height: 200px;
   background-attachment: fixed;
@@ -24,10 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.banner h3 {
-  font-size: 36px;
-  color: #000066;
 }
 
 /* Navigation */
@@ -51,31 +49,17 @@ nav a:hover {
   background-color: #333;
 }
 
-/* Main Content */
-main {
-  background-color: rgba(242, 238, 209, 0.509);
-  text-align: center;
-  padding: 20px;
-}
-
 /* Headings */
 h2 {
   padding: 10px;
-  color: #0c1317;
+  color: #ffd500;
   font-size: 32px;
-}
-
-.section h2 span,
-.secB h2 span {
-  background: linear-gradient(to right, #4CAF50, #a9e0fd );
-  padding: 10px 55px;
-  border-radius: 20px;
 }
 
 /* Paragraphs */
 p {
   text-align: justify;
-  color: #4a0884;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.7;
 }
@@ -83,109 +67,60 @@ p {
 /* Section Styling */
 .section,
 .secB {
-  border: 1px solid rgb(77, 7, 89);
-  background-color: #d2d9ff;
+  border: 1px solid rgb(255, 196, 2);
+  background-color: #12508f;
   padding: 20px;
   border-radius: 12px;
   max-width: 1000px;
   margin: 30px auto;
 }
-.secB {
-  background-color: #a9e0fd;
-}
 
-/* Table Styling */
-table {
-  width: 90%;
-  border-collapse: collapse;
-  margin: 30px auto;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-}
-
-caption {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-th, td {
-  padding: 14px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-/* PDF Button */
-.pdf-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #056e0b;
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
-  font-size: 16px;
-  margin: 10px 5px;
-  transition: background-color 0.3s ease;
-}
-
-.pdf-button:hover {
-  background-color: #013d02;
-}
-
-/* Media */
-video, iframe, img {
-  padding: 10px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  padding: 12px 20px;
-  display: inline-block;
-  font-size: 16px;
-}
-
-/* Subjects */
+/* Subjects Section */
 .subjects-section {
-  background-color: #cefff4;
-  padding: 40px 20px;
-  text-align: center;
+  background-image: url(/AA.png);
+  background-size: cover;
+   
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
 }
 
-.subjects-section h2 {
+.quran-section {
+  background-image: url(/bbb.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.subjects-section h2,
+.quran-section h2 {
+  background: linear-gradient(to right, #e8c201, #ffd500);
+ border-radius: 10px;
   font-size: 36px;
-  color: #003366;
+  color: rgb(3, 3, 43);
   margin-bottom: 10px;
+  display: inline-block;
+  padding: 10px 55px;
 }
 
 .section-intro {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.quran-intro {
   font-size: 25px;
   color: #444;
   margin-bottom: 30px;
 }
 
-.subjects-grid {
+/* Grid Layouts */
+.subjects-grid,
+.quran-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
@@ -193,7 +128,9 @@ footer a {
   margin: 0 auto;
 }
 
-.subject-card {
+/* Cards */
+.subject-card,
+.quran-card {
   background-color: #ffffff;
   border: 2px solid #005b96;
   border-radius: 12px;
@@ -204,15 +141,16 @@ footer a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.subject-card:hover {
+.subject-card:hover,
+.quran-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 91, 150, 0.2);
 }
 
-/* 🔽 Responsive Mobile Styles */
+/* Responsive Mobile Styles */
 @media (max-width: 768px) {
   .banner {
-    background-size: 80% auto; /* make image larger on smaller screens */
+    background-size: 80% auto;
     background-position: center top;
     height: 180px;
   }
@@ -231,7 +169,8 @@ footer a {
     font-size: 16px;
   }
 
-  .section, .secB {
+  .section,
+  .secB {
     padding: 15px;
     margin: 15px;
   }
@@ -244,30 +183,196 @@ footer a {
     font-size: 16px;
   }
 
-  .section h2 span, .secB h2 span {
-    padding: 8px 30px;
-    font-size: 18px;
-  }
-
-  .subjects-section h2 {
+  .subjects-section h2,
+  .quran-section h2 {
     font-size: 28px;
+    padding: 10px 30px;
   }
 
-  .section-intro {
+  .section-intro,
+  .quran-intro {
     font-size: 18px;
   }
 
-  .pdf-button {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-  table, th, td {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .subjects-grid {
+  .subjects-grid,
+  .quran-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #ffaa0d;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #444444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Link Buttons */
+.link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #0077cc, #005fa3);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.link-btn:hover {
+  background: linear-gradient(135deg, #005fa3, #003d73);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.link-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+ .faculty-section {
+    margin-bottom: 40px;
+  }
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+  }
+  .faculty-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding-bottom: 30px;
+  }
+  .faculty-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+  .faculty-card h3 {
+    margin: 10px 0 5px;
+    color: #004080;
+  }
+  .faculty-card p {
+    margin: 1px 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+
+  /* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background:#004080;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+/* WhatsApp Icon */
+.contact-item .fa-whatsapp {
+  color: #25d366;
+  font-size: 24px;
+}
+
+/* Gmail Icon */
+.contact-item .fa-envelope {
+  color: #d44638;
+  font-size: 22px;
 }
