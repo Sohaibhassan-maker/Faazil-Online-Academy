@@ -31,10 +31,11 @@ main {
 /* Navigation */
 nav {
   background-color: #000;
-  overflow: hidden;
+  overflow-x: auto;   /* enable horizontal scroll if content is wider */
+  white-space: nowrap; /* prevent text wrapping */
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* keep items in one line */
 }
 
 nav a {
