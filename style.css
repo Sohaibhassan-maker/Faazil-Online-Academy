@@ -465,7 +465,7 @@ body {
   margin: 20px 0;           /* adds spacing */
 }
 .reviews-sheet iframe {
-  width: 50%;
+  width: 80%;
   height: auto; /* Adjust height */
   border: 2px solid #ccc;
   border-radius: 8px;
