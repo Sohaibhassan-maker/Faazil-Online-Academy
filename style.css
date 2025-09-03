@@ -18,14 +18,16 @@ main {
   background-color: #115191;
   background-image: url(/BG\ 2.png);
   background-size: 30% auto;
-  background-position:top center;
+  background-position: top center;
   background-repeat: no-repeat;
   height: 200px;
   background-attachment: fixed;
-    color: #ffd500;
+  color: #ffd500;
+
   display: flex;
-  justify-content: right;
-  align-items: center;
+  justify-content: flex-end; /* moves content to the right */
+  align-items: flex-start;   /* moves content to the top */
+  padding: 10px; /* optional spacing from edges */
 }
 
 
