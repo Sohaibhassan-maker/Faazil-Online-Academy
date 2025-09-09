@@ -27,7 +27,7 @@ main {
   display: flex;
   justify-content: flex-end; /* moves content to the right */
   align-items: flex-start;   /* moves content to the top */
-  padding: 10px; /* optional spacing from edges */
+   /* optional spacing from edges */
 }
 
 
