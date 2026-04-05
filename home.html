@@ -38,7 +38,97 @@
          
  <br>
  
-<a href="KHAN ACADEMY EXERCISES.docx" download><h3>Download khan academy links for practice</h3></a>
+
+
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Google Doc Viewer</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .toggleBtn { background: #28a745; }
+        .downloadBtn { background: #007bff; }
+
+        #docContainer {
+            margin-top: 20px;
+            display: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+<!-- Download Button -->
+<a href="https://docs.google.com/document/d/e/2PACX-1vQhgt0VPCv-eKIsmxXwiZd5-pvYXyD9F1DBMriiSnqXzQygUPg85Z-SRcKgO2gzCUAgr_jqS3kguIqG/pub?output=pdf" target="_blank">
+    <button class="downloadBtn">
+       Khan academy links
+    </button>
+</a>
+
+<!-- Document Container -->
+<div id="docContainer">
+    <iframe 
+        id="docFrame"
+        src="https://docs.google.com/document/d/e/2PACX-1vQhgt0VPCv-eKIsmxXwiZd5-pvYXyD9F1DBMriiSnqXzQygUPg85Z-SRcKgO2gzCUAgr_jqS3kguIqG/pub?embedded=true">
+    </iframe>
+</div>
+
+<script>
+
+// Show / Hide Function
+function toggleDoc(){
+    let doc = document.getElementById("docContainer");
+    doc.style.display = (doc.style.display === "none") ? "block" : "none";
+}
+
+// Auto refresh every 10 seconds (for live updates)
+setInterval(() => {
+    let iframe = document.getElementById("docFrame");
+    iframe.src = iframe.src;
+}, 10000);
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
 
 
     <!--<a href="FWF website/Reviews.pdf.pdf" class="pdf-button" target="_blank">Click here to see Reviews</a>-->
